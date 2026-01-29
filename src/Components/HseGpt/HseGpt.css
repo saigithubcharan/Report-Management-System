@@ -1,0 +1,100 @@
+.hse-gpt {
+    margin: 0 auto;
+    text-align: center;
+    overflow: auto;
+    height: 100vh;
+  }
+
+/* Question input styling */
+.question-input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .question-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Send button styling */
+  .send-button {
+    background-color: #efc71d;
+    color: white;
+    padding: 0.4%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  /* Response display styling */
+  .response-container {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  /* Response label styling */
+  .response-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Response content styling */
+  .response-content {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    min-height: 30px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  /* Additional styling for the question-response container */
+.question-response-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: grey;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 30px;
+    margin-top: 5px;
+  }
+
+  /* Add these styles to your existing CSS */
+
+/* Styling for question suggestions */
+.question-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.suggestion {
+  background-color: #f0f0f0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: small;
+  font-style: italic;
+}
+
+.suggestion:hover {
+  background-color: #ddd;
+}
+
+    @media (max-width: 900px) {
+  .hse-gpt {                /* Remove auto margin */
+    width: 100vw;               /* Full width */
+   
+  }
+}

@@ -1,0 +1,40 @@
+.observations-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+  .drawer-header {
+    padding: 10px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .close-drawer-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .observations-container {
+    padding: 20px;
+  }
+  
+  
+  @media(max-width:800px){
+    .observations-drawer{
+      width:100%
+    }
+    .observations-container{
+      width: 100% !important;
+      max-width: none !important;
+      
+    }
+  }

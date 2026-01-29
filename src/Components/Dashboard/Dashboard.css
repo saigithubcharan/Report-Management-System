@@ -1,0 +1,107 @@
+/* .dashboard {
+    width: 100%;
+    margin: auto;
+    height: 87vh;
+    overflow:auto;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #b4b4b4;
+    border: 1px solid #ccc;
+    transition: background-color 1s, border-bottom 1s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.500);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .tab:hover {
+    background-color: #ddd;
+  }
+  
+  .tab.active {
+    background-color: #efc71d;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .placeholder-content {
+    padding: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+    transition: opacity 0.3s;
+    opacity: 1;
+  }
+  
+  .placeholder-content.inactive {
+    opacity: 0;
+  }
+   */
+
+   .dashboard {
+    width: 100%;
+    margin: auto;
+    height: 87vh;
+    overflow: auto;
+     transition: opacity 0.3s ease;
+  }
+  
+  .dashboard .MuiTabs-root {
+    margin-bottom: 10px;
+  }
+  .dashboard.dimmed {
+  opacity: 0.5;
+  pointer-events: none; /* optional: disables interaction when dimmed */
+}
+  .dashboard .MuiTab-root {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #b4b4b4;
+    color: #000; /* Text color */
+    transition: background-color 0.3s, color 0.3s; /* Transition for background and text color */
+    font-size: large;
+    font-weight: bold;
+    border-top-left-radius: 10px; /* Rounded top left corner */
+    border-top-right-radius: 10px; /* Rounded top right corner */
+  }
+  
+  .dashboard .MuiTab-root:hover {
+    background-color: #ccc; /* Hover color */
+  }
+  
+  .dashboard .Mui-selected {
+    background-color: #efc71d !important; /* Active tab background color */
+    color: #fff !important; /* Active tab text color */
+  }
+  @media (max-width: 900px) {
+  .dashboard {
+    height: 100%;               /* Let it grow as needed */
+    padding: 10px;              /* Add padding to avoid edge touches */
+    margin: 0;                  /* Remove auto margin */
+    width: 100vw;               /* Full width */
+    box-sizing: border-box;     /* Include padding in width */
+  }
+}
+  
+  
+  

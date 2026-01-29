@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #307268;
+    color: #efc71d;
+}
+
+/* Add this to your NavBar.css or your component's styling */
+.menu-item-name {
+    max-width: 160px; /* Adjust the value as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+/* .MuiPaper-root{
+    border-radius: 15px !important;
+} */
+.MuiPaper-root ul {
+    padding-bottom: 0;
+}
+@media (max-width: 900px){
+    .image{
+display: none;
+    }
+}
+@media(max-width:600px){
+  .navbar{
+    min-height:64px !important
+  }  
+}

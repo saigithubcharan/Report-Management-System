@@ -1,0 +1,85 @@
+.observation-item-checkbox{
+    padding-left: 15px;
+}
+
+.accordion-area-label {
+  width: 33%;
+  flex-shrink: 0;
+  white-space: nowrap;         
+  overflow: hidden;            
+  text-overflow: ellipsis;     
+  font-weight: bold;
+}
+
+.select-container input{
+  padding: 9px;
+  font-weight: 400;
+  font-size: 15px;
+  border: 1px solid #ccc;       
+  border-radius: 4px;           
+  outline: none;                
+}
+
+
+@media screen and (max-width: 768px) {
+    .search-input {
+  flex: 1;
+  padding: 8px 12px;           /* Add horizontal padding */
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  width: 100%;
+  box-sizing: border-box;      /* Ensures padding doesn't overflow */
+  margin-bottom: 10px;
+}
+  .modal-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+.accordion-area-label {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+  /* .search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  } */
+
+  .search-bar-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .select-container,
+   .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container > .select {
+    width: 100%;
+  }
+  .flex-container-start-end-date {
+    flex-direction: column;
+  }
+   .observations-container > div:first-child {
+    flex-direction: column;
+    align-items: stretch;
+  } 
+  .search-input {
+    width: 100%;
+  }
+
+  .hse-observation-item-checkbox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .MuiAccordionSummary-content {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

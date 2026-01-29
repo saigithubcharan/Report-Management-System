@@ -1,0 +1,64 @@
+/* CounterMeasureVerificationTable.css */
+
+.cmv-table-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .cmv-table-scroll {
+    max-height: 85vh;
+    overflow-y: auto;
+  }
+  
+  .cmv-table-container .cmv-even-row {
+    background-color: #ffffff; /* default even row color */
+  }
+  
+  .cmv-table-container .cmv-odd-row {
+    background-color: #f2f2f2; /* default odd row color */
+  }
+  
+  .cmv-editable-cell {
+    position: relative;
+    padding: 8px;
+    vertical-align: top;
+  }
+  
+  .cmv-edit-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .cmv-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cmv-photo-image-saved {
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+  }
+  
+  .cmv-cancel-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  
+  .cmv-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .cmv-footer button {
+    margin-right: 20px;
+  }
+  

@@ -1,0 +1,77 @@
+/* Add this CSS to your stylesheet or a style tag in your component */
+.photo-cell-saved {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    overflow: auto; /* Add scroll bars for larger images */
+  }
+  
+  .photo-image-saved {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Add some margin for spacing between images */
+  }
+
+  .editable-cell {
+    position: relative;
+  }
+  
+  .cell-content {
+    position: relative;
+  }
+  
+  .edit-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  
+
+  @media (max-width: 800px) {
+  #conclusionFooter{
+    display: flex;
+  flex-wrap: wrap;             /* Allow wrapping on small screens */
+  gap: 10px;                   /* Space between buttons */
+  justify-content: center;     /* Center align by default */
+  padding: 20px;
+  background-color: #fff;
+  overflow-x: auto;            /* Enable horizontal scroll if overflow */
+  max-width: 100%;
+  box-sizing: border-box;
+  }
+}
+.edit-icon {        
+  transition: none !important;
+  cursor: default !important; 
+}
+@media (max-width: 600px) {
+.graphClass{
+  width: 100% !important;
+}
+.recharts-cartesian-axis-ticks{
+  font-size: 8px !important;
+}
+.recharts-legend-wrapper{
+  bottom:0px !important;
+}
+.css-ahj2mt-MuiTypography-root{
+  font-size: 12px !important;
+}
+}
+  
+@media (max-width: 768px) {
+
+.recharts-cartesian-axis-ticks{
+  font-size: 9px !important;
+}
+.recharts-legend-wrapper{
+  bottom:10px !important;
+}
+.css-ahj2mt-MuiTypography-root{
+  font-size: 12px !important;
+}
+}
+.edit-icon {        
+  transition: none !important;
+  cursor: default !important; 
+}

@@ -1,0 +1,59 @@
+.electrical-org-site-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+  }
+  
+  .electrical-select-wrapper {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .electrical-select-label {
+    margin-bottom: 5px;
+  }
+
+  .dashboard-table-container {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .dashboard-table-container table {
+    width: 100%;
+  }
+  
+  .dashboard-table-container th,
+  .dashboard-table-container td {
+    padding: 12px; /* Adjust the padding to decrease cell size */
+    font-size: 18px; /* Adjust the font size to decrease text size */
+  }
+  
+  .dashboard-table-container th {
+    background: grey;
+  }
+  @media (max-width: 768px) {
+  .electrical-org-site-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .electrical-select-wrapper {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .dashboard-table-container th,
+  .dashboard-table-container td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

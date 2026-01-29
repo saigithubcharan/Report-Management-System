@@ -1,0 +1,383 @@
+.review-modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.review-modal-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%; /* Adjust the width to fit the modal */
+  max-width: 1500px; /* Set a maximum width for larger screens */
+  /* max-height: 80vh; */
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.export-modal-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 1500px; /* Set a maximum width for larger screens */
+  /* max-height: 80vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+.review-modal-header {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #307268;
+  color: #efc71d;
+}
+
+.review-modal-body {
+  /* margin-top: 20px; */
+  flex-grow: 1;
+  /* overflow-y: auto; */
+}
+
+.review-modal-section {
+  background-color: #ffecb3;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.review-modal-section h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.review-modal-body ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.review-modal-body ul li {
+  margin-bottom: 5px;
+}
+
+.sub-headings {
+  background-color: #f9f3d9;
+}
+
+.review-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.review-modal-footer button {
+  margin-left: 10px;
+}
+
+.text-area {
+  width: 95%;
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.5;
+  outline: none;
+  font-family: inherit;
+}
+
+.observation-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.observation-item:nth-child(1) {
+  margin-top: 10px;
+}
+
+.observation-text {
+  margin-right: 8px;
+}
+
+.cancel-icon {
+  cursor: pointer;
+  color: red;
+  font-size: 26px;
+}
+
+.cancel-icon:hover {
+  color: darkred;
+}
+
+.critical-observations-div {
+  background: whitesmoke;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0.1mm;
+  border-color: rgb(177, 177, 177);
+  padding: 10px;
+  height: 50vh;
+  overflow-y: auto;
+}
+
+.no-observations {
+  font-style: italic;
+  color: #aaa;
+  text-align: center;
+}
+
+.even-row {
+  background-color: #ffffff;
+}
+
+.odd-row {
+  background-color: #f2f2f2;
+}
+
+.table-container {
+  height: 65; /* Adjust the maximum height of the table container as needed */
+  /* overflow-y: auto; */
+  border: 1px solid #ccc; /* Add border to the table container */
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.MuiTable-root {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.MuiTableCell-root {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.MuiTableHead-root {
+  background-color: #f5f5f5;
+}
+
+.MuiTableCell-head {
+  font-weight: bold;
+}
+
+/* Reduce the font size for table content (excluding headings) */
+.MuiTableBody-root .MuiTableRow-root {
+  font-size: 11px;
+}
+
+.MuiTableBody-root .MuiTableCell-root {
+  font-size: 11px;
+  font-weight: 100;
+}
+
+/* Additional styling for your component */
+
+
+.image-container {
+  background-color: whitesmoke;
+  position: relative;
+  text-align: center;
+  width: 80%;
+  left: 10%;
+  
+}
+
+.image {
+  max-width: 70%; /* Adjust as needed */
+  max-height: 70%; /* Adjust as needed */
+  object-fit: contain;
+}
+
+.cover-details {
+  text-align: left;
+  margin: 5%; /* Adjust as needed */
+  width: 70%; /* Adjust as needed */
+  position: absolute;
+  top: 54.9%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+}
+
+.cover-text {
+  color: white;
+  padding: 0.1%; /* Adjust as needed */
+  font-size: 1.2vw; /* Responsive font size based on viewport width */
+}
+
+
+/* Add this CSS to your component's CSS file or as inline styles */
+
+
+.editable-cell {
+  position: relative;
+}
+
+.cell-content {
+  position: relative;
+}
+
+.edit-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.table-scroll {
+  max-height: 65vh; /* Set your desired max height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal scrolling */
+}
+
+/* new cover page design css */
+/* .report-container {
+  margin: 0 auto;
+   width: 1000px;
+  height: 800px;
+  position: relative;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+} */
+.report-container {
+  margin: 0 auto;
+  width: 850px;
+  height: 1123px;
+  position: relative;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+} 
+ 
+.report-cover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+ 
+.report-cover img {
+  width: 100%;
+  height: 100%;
+}
+ 
+.report-details {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 65%;
+  background-color: #efc71d;
+  padding: 10px;
+  box-sizing: border-box;
+}
+ 
+.report-details p {
+  font-size: 20px;
+  color: #307268;
+  margin: 5px;
+  padding: 3px;
+  border-bottom: 1px solid #307268;
+}
+ 
+.report-details a {
+  color: #307268;
+  padding: 3px;
+  margin: 5px;
+  font-size: 13px;
+  text-decoration: none;
+}
+ 
+.report-title {
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #f9f3d9;
+}
+ 
+.report-year {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: normal;
+}
+ 
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #f9f3d9;
+  margin-right: 10px;
+}
+ 
+.report-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 12px;
+  color: #efc71d;
+}
+
+.custom-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  #conclusionFooter{
+    display: flex;
+  flex-wrap: wrap;             /* Allow wrapping on small screens */
+  gap: 10px;                   /* Space between buttons */
+  justify-content: center;     /* Center align by default */
+  padding: 20px;
+  background-color: #fff;
+  overflow-x: auto;            /* Enable horizontal scroll if overflow */
+  max-width: 100%;
+  box-sizing: border-box;
+  }
+}
+.edit-icon {        
+  transition: none !important;
+  cursor: default !important; 
+}
+@media (max-width: 600px) {
+.graphClass{
+  width: 100% !important;
+}
+.recharts-cartesian-axis-ticks{
+  font-size: 8px !important;
+}
+.recharts-legend-wrapper{
+  bottom:0px !important;
+}
+.css-ahj2mt-MuiTypography-root{
+  font-size: 12px !important;
+}
+}
+  
+@media (max-width: 768px) {
+
+.recharts-cartesian-axis-ticks{
+  font-size: 9px !important;
+}
+.recharts-legend-wrapper{
+  bottom:10px !important;
+}
+.css-ahj2mt-MuiTypography-root{
+  font-size: 12px !important;
+}
+}

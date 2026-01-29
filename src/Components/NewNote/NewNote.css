@@ -1,0 +1,98 @@
+/* NewNote.css */
+
+.new-note {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60vw;
+    height: 80vh; /* Adjust the height as needed */
+    margin: 50px auto; /* Adjust the top and bottom margins as needed */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+    background-color: whitesmoke;
+  }
+  
+  .new-note header {
+    text-align: center;
+    background-color: #307268;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 10px;
+    color: #efc71d;
+  }
+  
+  .new-note section {
+    margin-bottom: 20px;
+  }
+  
+  .new-note .select-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .new-note .note-select-container {
+    width: 48%;
+  }
+  
+  .new-note .image-upload-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 0.05mm;
+    border-radius: 5px;
+  }
+  
+  .new-note .image-upload-container img {
+    width: 100px; /* Set the desired width for each image */
+    height: auto;
+    margin-right: 10px; /* Add margin between images */
+    margin-bottom: 10px; /* Add margin below each row of images */
+  }
+  
+  
+  .new-note .uploaded-image {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 0.05mm;
+    margin-right: 2px;
+    border-radius: 10px;
+  }
+  
+  .new-note .uploaded-image img {
+    margin-right: 10px;
+  }
+  
+  .new-note footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .new-note button {
+    width: 48%;
+    background-color: #efc71d;
+    color: black;
+  }
+
+  .new-note button:hover {
+    background-color: #bba124; /* Darker shade of #efc71d */
+  }
+  
+  /* Add this to your existing CSS file or create a new one */
+
+.uploading-text {
+font-size: medium;
+font-style: italic;
+font-weight: bold;
+}
+
+.note-type-switch {
+ display: flex;
+ font-weight: 500;
+}
+

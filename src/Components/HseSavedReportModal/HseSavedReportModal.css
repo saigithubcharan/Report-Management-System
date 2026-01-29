@@ -1,0 +1,147 @@
+/* Add this CSS to your stylesheet or a style tag in your component */
+
+.select-container input{
+  padding: 9px;
+  font-weight: 400;
+  font-size: 15px;
+  border: 1px solid #ccc;       
+  border-radius: 4px;           
+  outline: none;                
+}
+
+.photo-cell-saved {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    overflow: auto; /* Add scroll bars for larger images */
+  }
+  
+  .photo-image-saved {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Add some margin for spacing between images */
+  }
+
+  .editable-cell {
+    position: relative;
+  }
+  
+  .cell-content {
+    position: relative;
+  }
+  
+  .edit-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+ .review-table-wrapper td {
+  border: 1px solid #999;
+  padding: 8px 12px;
+ 
+}
+.review-table-wrapper td:first-child {
+  width: 30%;             
+  background: #f7f7f7;
+}
+
+.review-table-wrapper td:last-child {
+  width: 70%;             
+} 
+
+    @media (max-width: 800px) {
+  #conclusionFooter{
+    display: flex;
+  flex-wrap: wrap;             /* Allow wrapping on small screens */
+  gap: 10px;                   /* Space between buttons */
+  justify-content: center;     /* Center align by default */
+  padding: 20px;
+  background-color: #fff;
+  overflow-x: auto;            /* Enable horizontal scroll if overflow */
+  max-width: 100%;
+  box-sizing: border-box;
+  }
+}
+@media(max-width:900px){
+   .chart-container-for-report{
+     box-shadow: none;
+    }
+}
+.custom-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.table-containerr {
+  margin: 30px auto;
+  width: 90%;
+  overflow-x: auto;
+  font-family: "montserrat";
+}
+
+.styled-tablee {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.styled-tablee thead tr {
+  background-color: #1e5f5b;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-tablee th,
+.styled-tablee td {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.styled-tablee tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.section-headingg td {
+  background-color: #f9e79f; /* soft yellow */
+  font-weight: 600;
+  color: #333;
+}
+
+.action-celll {
+  text-align: center;
+  width: 80px;
+}
+
+.delete-iconn {
+  color: #c0392b;
+  cursor: pointer;
+}
+
+.add-icon {
+  color: #27ae60;
+  cursor: pointer;
+}
+
+.heading-iconn {
+  color: #f39c12;
+  cursor: pointer;
+}
+
+.styled-tablee input[type="text"] {
+  width: 90%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-roww input:focus {
+  outline: 1px solid #1e5f5b;
+}
+.edit-icon {        
+  transition: none !important;
+  cursor: default !important; 
+}

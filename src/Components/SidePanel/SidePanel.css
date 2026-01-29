@@ -1,0 +1,70 @@
+.sidepanel{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #183934;
+      max-height: 100vh;       
+  scrollbar-width: thin;  
+   position: relative; 
+}
+
+
+.sidepanel-item {
+    display: flex;
+    /* align-items: center; */
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: large;
+  }
+  
+  .panel-icons {
+    margin-right: 8px;
+  }
+  /* Hide sidepanel by default on small screens */
+.menu-toggle-btn {
+  display: none;
+}
+.imageLogo{
+  display: none;
+}
+/* Responsive behavior for small screens */
+@media (max-width: 900px) {
+  .sidepanel {
+    position: fixed;
+    top: 65px;
+    /* left: 10px; */
+    width: 150px;
+    z-index: 1000;
+    background-color: #183934;
+    border-radius: 10px;
+    display: none; /* hidden by default */
+  }
+
+  .sidepanel.open {
+    display: flex; /* show when open */
+  }
+
+  .menu-toggle-btn {
+    display: block;
+    position: fixed;
+    top: 13px;
+    left: 5px;
+    z-index: 1100;
+    background-color: #efc71d;
+     /* background-color: #309370; */
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #307268;
+  }
+ .imageLogo{
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+ }
+}

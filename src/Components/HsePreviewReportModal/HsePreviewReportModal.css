@@ -1,0 +1,336 @@
+.review-table-wrapper td {
+  border: 1px solid #999;
+  padding: 8px 12px;
+ 
+}
+.review-table-wrapper td:first-child {
+  width: 30%;             
+  background: #f7f7f7;
+}
+
+.review-table-wrapper td:last-child {
+  width: 70%;             
+}
+
+
+.chart-container-for-report {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* Adjust the gap as needed */
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  height: fit-content;
+}
+
+.total-serverity-div-for-report {
+  grid-row: 1;
+  grid-column: 1;
+  background-color: #bbc8ca;
+  /* Add a background color for visualization */
+  border-radius: 20px;
+  /* Add border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* Add box shadow for depth */
+  padding: 20px;
+  /* Add padding as needed */
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.severity-item-for-report {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.severity-item-for-report span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.area-chart-for-report {
+  grid-column: 1 /span 2;
+  /* Place the divs in the second column */
+  grid-row: 2;
+  /* height: 80%; */
+  background-color: #bbc8ca;
+  /* Add a background color for visualization */
+  border-radius: 20px;
+  /* Add border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* Add box shadow for depth */
+  padding: 20px;
+  /* Add padding as needed */
+  font-weight: bold;
+}
+
+.severity-chart-for-report {
+  grid-column: 1 /span 2;
+  /* Place the divs in the second column */
+  grid-row: 3;
+  /* height: 80%; */
+  background-color: #bbc8ca;
+  /* Add a background color for visualization */
+  border-radius: 20px;
+  /* Add border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* Add box shadow for depth */
+  padding: 20px;
+  /* Add padding as needed */
+  font-weight: bold;
+}
+
+.pie-chart-for-report {
+  grid-column: 2;
+  /* Place the pie chart in the third column */
+  grid-row: 1;
+  /* Span two rows for the pie chart */
+  height: 90%;
+  /* Adjust the height as needed */
+  background-color: #bbc8ca;
+  /* Add a background color for visualization */
+  border-radius: 20px;
+  /* Add border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* Add box shadow for depth */
+  padding: 20px;
+  /* Add padding as needed */
+  font-weight: bold;
+}
+
+.hse-cover-details {
+  text-align: left;
+  margin: 5%;
+  /* Adjust as needed */
+  width: 70%;
+  /* Adjust as needed */
+  position: absolute;
+  top: 50%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+}
+
+.facility-info-text-area {
+  width: 100%;
+  background: whitesmoke;
+  max-height: 5vh;
+  overflow: auto;
+}
+
+/* new cover page design for cover page */
+.hse-report-container {
+  margin: 0 auto;
+  width: 850px;
+  height: 1123px;
+  position: relative;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+.hse-report-container {
+  margin: 0 auto;
+     width: 1000px;
+  height: 800px;
+  position: relative;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.hse-report-cover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hse-report-cover img {
+  width: 100%;
+  height: 100%;
+}
+
+.hse-report-details {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 65%;
+  background-color: #efc71d;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.hse-report-details p {
+  font-size: 20px;
+  color: #307268;
+  margin: 5px;
+  padding: 3px;
+  border-bottom: 1px solid #307268;
+}
+
+.hse-report-details a {
+  color: #307268;
+  padding: 3px;
+  margin: 5px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.hse-report-title {
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: #f9f3d9;
+}
+
+.hse-report-year {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #f9f3d9;
+  margin-right: 10px;
+}
+
+.hse-report-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 12px;
+  color: #efc71d;
+}
+.even-row {
+  background-color: #ffffff;
+}
+
+.odd-row {
+  background-color: #f2f2f2;
+}
+  @media (max-width: 800px) {
+  #conclusionFooter{
+    display: flex;
+  flex-wrap: wrap;             /* Allow wrapping on small screens */
+  gap: 10px;                   /* Space between buttons */
+  justify-content: center;     /* Center align by default */
+  padding: 20px;
+  background-color: #fff;
+  overflow-x: auto;            /* Enable horizontal scroll if overflow */
+  max-width: 100%;
+  box-sizing: border-box;
+  }
+}
+@media(max-width:900px){
+   .chart-container-for-report{
+     box-shadow: none;
+    }
+}
+.custom-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit-icon {        
+  transition: none !important;
+  cursor: default !important; 
+}
+.jodit-ui-group.jodit-ui-group_separated_true.jodit-ui-group_group_media.jodit-ui-group_size_middle
+{
+   display: none !important;
+    visibility: hidden !important;
+}
+
+
+
+
+
+
+.table-containerr {
+  margin: 30px auto;
+  width: 90%;
+  overflow-x: auto;
+  font-family: "montserrat";
+}
+
+.styled-tablee {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.styled-tablee thead tr {
+  background-color: #1e5f5b;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-tablee th,
+.styled-tablee td {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.styled-tablee tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.section-headingg td {
+  background-color: #f9e79f; /* soft yellow */
+  font-weight: 600;
+  color: #333;
+}
+
+.action-celll {
+  text-align: center;
+  width: 80px;
+}
+
+.delete-iconn {
+  color: #c0392b;
+  cursor: pointer;
+}
+
+.add-icon {
+  color: #27ae60;
+  cursor: pointer;
+}
+
+.heading-iconn {
+  color: #f39c12;
+  cursor: pointer;
+}
+
+.styled-tablee input[type="text"] {
+  width: 90%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-roww input:focus {
+  outline: 1px solid #1e5f5b;
+}
+.edit-icon {        
+  transition: none !important;
+  cursor: default !important; 
+}

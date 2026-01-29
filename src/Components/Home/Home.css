@@ -1,0 +1,33 @@
+
+.center-cards-parent-div {
+    background-color: #e2d2bf;
+    border-radius: 10px;
+    height: 90vh;
+}
+
+.center-cards-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+}
+
+.grid-panel {
+    background-color: #183934;
+    border-radius: 10px;
+    /* height: 100%; */
+    overflow-y: auto;
+}
+  .MuiGrid-grid-xs-10{
+    max-width: 100% !important;
+  }
+@media (max-width: 900px) {
+    .center-cards-div {
+    margin: 10px; /* Smaller margin on mobile */
+    flex-direction: column; /* Stack vertically if needed */
+    align-items: center;
+  }
+  .grid-panel {
+    display: none;
+  }
+
+}

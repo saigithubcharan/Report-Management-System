@@ -1,0 +1,212 @@
+/* ElectricalDashboard.css */
+
+.org-site-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.select-wrapper {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.select-label {
+  margin-bottom: 5px;
+}
+
+.chart-container {
+  display: grid;
+  grid-template-columns:  1fr;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 30px; /* Adjust the gap as needed */
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  height: fit-content;
+  margin-top: 10px;
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  overflow-y: auto;
+  max-height: 80vh;/* Hide any potential overflow */
+}
+
+.total-serverity-div {
+  grid-column: 1 / span 1; /* Span two columns */
+  grid-row: 1 / span 1; /* Span two rows */
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-size: 15px;
+    overflow-y: auto;
+  font-weight: bold;
+}
+
+.severity-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.severity-item span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.area-chart {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-weight: bold;
+    overflow-y: auto;
+}
+
+.severity-chart {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-weight: bold;
+    overflow-y: auto;
+}
+
+.pie-chart {
+  grid-column: 2;
+  grid-row: 1 ;
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-weight: bold;
+    overflow-y: auto;
+}
+
+.main-clause {
+  grid-column: 1 / span 2;
+  grid-row: 4; /* Span two rows */
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow-y: auto;
+  font-weight: bold;
+  height: 50vh;
+    overflow-y: auto;
+}
+
+.main-clause-item {
+  background-color: lightblue;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1000; /* Adjust the z-index as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-table-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Set a background color for the table screen */
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+  z-index: 1000; /* Adjust the z-index as needed */
+  font-size: small;
+  background-color: white;
+}
+
+.chart-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.chart-table-container th,
+.chart-table-container td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.chart-table-container th {
+  background-color: #f2f2f2;
+}
+
+.download-button {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.table-close-button {
+  position: fixed;
+  top: 0px; /* Adjust the bottom position as needed */
+  right: 15px; /* Adjust the right position as needed */
+  padding: 10px;
+  background-color: rgba(237, 212, 54, 0.5); /* Adjust the RGB values and alpha (transparency) as needed */
+  color: black; /* Adjust the text color as needed */
+  border: none;
+  cursor: pointer;
+  z-index: 999; /* Ensure the button is above the table */
+  border-radius: 50px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  font-weight: bold;
+}
+
+.table-close-button:hover {
+  background-color: rgba(237, 212, 54, 1); /* Adjust the RGB values and set full alpha (no transparency) on hover */
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust the max-width value as needed for your design */
+  
+  .chart-container {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    gap: 20px; /* Adjust the gap as needed */
+  }
+
+  .total-serverity-div,
+  .area-chart,
+  .severity-chart,
+  .pie-chart,
+  .main-clause {
+    grid-column: 1; /* Set all charts to span a single column */
+    grid-row: auto; /* Reset grid row */
+    max-height: 400px;
+  }
+   .org-site-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .select-wrapper {
+    margin-right: 0;
+    width: 100%;
+  }
+}

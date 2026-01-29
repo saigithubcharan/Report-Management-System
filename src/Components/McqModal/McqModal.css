@@ -1,0 +1,41 @@
+.mcq-modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    outline: none;
+    overflow: auto;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .modal-close-button {
+    cursor: pointer;
+    color: #000;
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding: 0;
+  }
+  
+  .mqc-modal-body {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .add-option-button {
+    margin-top: 16px;
+  }
+  

@@ -1,0 +1,45 @@
+.image-viewer-modal {
+    /* Styles for the image viewer modal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .image-viewer-modal img {
+    /* Style for the image in the viewer modal */
+    max-width: 100%;
+    max-height: 80%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .close-button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #efc71d;
+    color: red;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .download-button {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    background-color: #efc71d;
+    color:green;
+    border-radius: 50%;
+    padding: none;
+    cursor: pointer;
+  }

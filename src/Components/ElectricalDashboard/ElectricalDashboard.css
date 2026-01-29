@@ -1,0 +1,147 @@
+.org-site-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.select-wrapper {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.select-label {
+  margin-bottom: 5px;
+}
+
+.chart-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px; /* Adjust the gap as needed */
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  height: 350px; 
+  overflow-y: auto;
+}
+
+.total-serverity-div {
+  grid-row: span 2;
+  background-color: lightgray; /* Add a background color for visualization */
+  border-radius: 20px; /* Add border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow for depth */
+  padding: 20px; /* Add padding as needed */
+}
+
+.severity-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.severity-item span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* ElectricalDashboard.css */
+
+/* ... (previous styles) */
+
+.area-chart,
+.severity-chart {
+  grid-column: 2; /* Place the divs in the second column */
+  height: 80%; /* Adjust the height as needed */
+  width: 380px;
+  background-color: lightgray; /* Add a background color for visualization */
+  border-radius: 20px; /* Add border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow for depth */
+  padding: 20px; /* Add padding as needed */
+}
+
+.pie-chart {
+  grid-column: 3; /* Place the pie chart in the third column */
+  grid-row: 1 / span 2; /* Span two rows for the pie chart */
+  height: 90%; /* Adjust the height as needed */
+  width: 210px; /* Adjust the width as needed */
+  background-color: lightgray; /* Add a background color for visualization */
+  border-radius: 20px; /* Add border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow for depth */
+  padding: 20px; /* Add padding as needed */
+}
+
+.main-clause {
+  grid-column: 4; /* Place the pie chart in the third column */
+  grid-row: 1 / span 2; /* Span two rows for the pie chart */
+  height: 90%; /* Adjust the height as needed */
+  width: 210px; /* Adjust the width as needed */
+  background-color: lightgray; /* Add a background color for visualization */
+  border-radius: 20px; /* Add border-radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow for depth */
+  padding: 20px; /* Add padding as needed */
+  overflow-y: auto;
+}
+
+.main-clause-item {
+  background-color: skyblue;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow for depth */
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Add this CSS to your existing styles or create a new section for overlay styles */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1000; /* Adjust the z-index as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-table-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Set a background color for the table screen */
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+  z-index: 1000; /* Adjust the z-index as needed */
+  font-size: small;
+}
+.chart-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.chart-table-container th,
+.chart-table-container td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.chart-table-container th {
+  background-color: #f2f2f2;
+}
+
+.download-button {
+  text-align: right;
+  margin-top: 10px;
+}
+

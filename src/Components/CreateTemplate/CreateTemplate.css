@@ -1,0 +1,18 @@
+/* styles.css */
+
+  
+  .back-button {
+    margin-right: 16px;
+  }
+
+  .mobile-view-content {
+    border-style: solid;
+    border-width: 1mm;
+    border-radius: 20px;
+    height: 500px;
+    border-color: grey;
+    width: 300px;
+  }
+
+  
+  

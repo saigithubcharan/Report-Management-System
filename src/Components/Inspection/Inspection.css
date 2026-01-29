@@ -1,0 +1,68 @@
+.inspection-table-container {
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+  margin-top: 0%;
+  height: 60vh; /* Set the height of the table container */
+}
+
+.inspection-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  table-layout: fixed; /* Fix the table layout */
+  height: 100%; /* Set the height of the table */
+}
+
+
+.inspection-table th {
+  background-color: #f0f0f0;
+  padding: 8px;
+  text-align: center;
+  white-space: nowrap; /* Prevent header text from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inspection-table th:nth-child(1) {
+  min-width: 200px;
+}
+
+.inspection-table th:nth-child(2) {
+  min-width: 100px;
+}
+
+/* Add similar styles for other columns as needed */
+
+.inspection-table th,
+.inspection-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  white-space: pre-wrap; /* Allow text wrapping */
+  word-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+.search-container {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.no-inspections-message {
+  text-align: center;
+  padding: 20px; /* Add padding for spacing */
+}
+
+.inspector-image {
+  height: 200px;
+}
+
+.back-button {
+  text-align: left;
+  width: 46%;
+}

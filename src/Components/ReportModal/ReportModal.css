@@ -1,0 +1,343 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin:5px;
+  height: 94%;
+  max-height: 94%;
+  outline: none;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  background-color: #307268;
+  border-radius: 8px;
+  padding: 10px;
+  color: #efc71d;
+}
+
+.modal-content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.modal-body {
+  margin-bottom: 16px;
+}
+
+.select-container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.modal-footer {
+  margin-top: 16px;
+}
+
+.modal-footer hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.observations-container {
+  margin-top: 10px;
+  min-height: 36vh;
+  max-height: fit-content;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.observation-item-checkbox {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.no-observations {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.get-recommendations-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.get-recommendations-button:hover {
+  background-color: #45a049;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3px;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top of the flex container */
+}
+
+/* Apply styles to each select inside the flex container */
+.select {
+  width: 49.4%; 
+  position: relative; 
+  padding-top: 0.7%;
+}
+
+.select::-ms-expand,
+.select::-ms-check,
+.select::-webkit-select-arrow {
+  display: none; 
+}
+
+.select + .select-dropdown {
+  position: absolute;
+  top: 100%; 
+  width: 100%; 
+  z-index: 1; 
+}
+
+.select + .select-dropdown {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.flex-container-start-end-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding-top: 6px;
+}
+
+.to-date-from-date {
+  flex-grow: 1;
+  font-size: 15px;
+  padding: 8px;
+  font-family: inherit;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 200px; 
+  
+}
+
+.report-id {
+  flex-grow: 1;
+  font-size: 15px;
+  padding: 8px;
+  font-family: inherit;
+  font-weight: normal !important;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .flex-container-start-end-date {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.class-for-date-pickers {
+  font-family: inherit;
+  border-style: solid;
+  border-color: transparent;
+  width: 45vw;
+  font-size: inherit;
+  transition: border-color 0.3s ease; 
+  padding: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.note-label {
+  color: #ff9800; 
+  margin-left: 5px; 
+  font-weight: bold; 
+  font-size: 12px; 
+}
+
+
+.react-datepicker__day--selected {
+  background-color: #efc71d !important; 
+  color: white !important; 
+}
+
+.react-datepicker__day {
+  color: #000 !important;
+}
+
+.react-datepicker__day--disabled {
+  color: lightgray !important; 
+  cursor: not-allowed !important;
+}
+
+.button-styles {
+  padding:10px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border-style: none;
+  color:white;
+  width: 120px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.custom-close-button {
+  background-color: #efc71d;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px; 
+  font-weight: bold;
+  color: #307248;
+  width: 36px;
+  height: 36px;
+  line-height: 1;
+}
+
+.custom-close-button:hover {
+  background-color: #d1af19;
+}
+
+.search-input {
+  width: 30vw;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.observation-and-global-search{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.search-bar-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar-button:hover {
+  background-color: #e0e0e0;
+}
+
+.search-bar-button:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.search-text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+
+
+/* .collapsable-div {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsable-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #efc71d;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.collapsable-header .MuiSvgIcon-root {
+  margin-left: 8px;
+}
+
+.collapsable-content {
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  padding: 0 10px;
+  border-top: 1px solid #ddd;
+  position: relative;
+  padding: 10px;
+} */
+
+.custom-text-box{
+  display: flex;
+  gap: 10px;
+}
+
+.IoAddCircle{
+  color: #9EDF9C;
+}
+.IoAddCircle:hover{
+  color: #62825D;
+}
+.review-modal-subheader{
+  display: flex;
+  align-items: center;
+}
+.accordion-area-label {
+  width: 33%;
+  flex-shrink: 0;
+  white-space: nowrap;         /* Prevents text from wrapping */
+  overflow: hidden;            /* Hides overflow */
+  text-overflow: ellipsis;     /* Adds "..." if text is too long */
+  font-weight: bold;
+}

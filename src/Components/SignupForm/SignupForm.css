@@ -1,0 +1,12 @@
+.form-styles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #307268;
+    margin-top: 1rem;
+    border-width: 1mm;
+}

@@ -1,0 +1,94 @@
+.cmv-total-serverity-div {
+  grid-column: 2 / span ;
+  grid-row: 1; 
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cmv-pie-chart-old {
+  grid-column: 1;
+  grid-row: 2 ;
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-weight: bold;
+}
+
+.cmv-pie-chart-new {
+  grid-column: 2;
+  grid-row: 2 ;
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-weight: bold;
+}
+
+.cmv-area-chart {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-weight: bold;
+}
+
+.cmv-severity-chart {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  font-weight: bold;
+}
+
+.old-cmv-main-clause {
+  grid-column: 1;
+  grid-row: 5; /* Span two rows */
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow-y: auto;
+  font-weight: bold;
+  height: 50vh;
+}
+
+.new-cmv-main-clause {
+  grid-column: 2;
+  grid-row: 5; /* Span two rows */
+  background-color: #bbc8ca;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow-y: auto;
+  font-weight: bold;
+  height: 50vh;
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust the max-width value as needed for your design */
+  
+  .chart-container {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    gap: 20px; /* Adjust the gap as needed */
+  }
+
+  .cmv-total-serverity-div,
+  .cmv-area-chart,
+  .cmv-severity-chart,
+  .cmv-pie-chart-old,
+  .cmv-pie-chart-new,
+  .old-cmv-main-clause,
+  .new-cmv-main-clause {
+    grid-column: 1; /* Set all charts to span a single column */
+    grid-row: auto; /* Reset grid row */
+  }
+}
